@@ -42,6 +42,7 @@ exp(p,
     "isStorable", p.isStorable,
     "setCaboose", p.setCaboose,
     "isCaboose", p.isCaboose,
+    "setRequestConfig", p.setRequestConfig,
     "setAllAboardCallback", p.setAllAboardCallback,
     "isFromStorage", p.isFromStorage,
     "toJSON", p.toJSON

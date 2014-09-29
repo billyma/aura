@@ -969,6 +969,36 @@ Action.prototype.isChained = function() {
 };
 
 /**
+ * Returns true if a given funciton is "Box-Carted", or false otherwise. 
+ * For server-side Actions only.
+ *
+ * @private
+ * @returns {Boolean}
+ */
+Action.prototype.isBoxCarted = function() {
+    return this.requestConfig ? this.requestConfig.isBoxcarted : true;
+};
+
+/**
+ * Returns request configuration if one was set
+ *
+ * @private
+ * @returns {Object}
+ */
+Action.prototype.getRequestConfig = function() {
+    return this.requestConfig;
+};
+
+/**
+ * Set special request configuration
+ *
+ * @public
+ */
+Action.prototype.setRequestConfig = function(config) {
+    this.requestConfig = config;
+};
+
+/**
  * Returns the key/value pairs of the Action id, descriptor, and parameters in JSON format.
  *
  * @public
