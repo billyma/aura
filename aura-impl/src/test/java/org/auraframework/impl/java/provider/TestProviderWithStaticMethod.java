@@ -23,8 +23,8 @@ import org.auraframework.system.Annotations.Provider;
  * this provider is for JavaProviderDefTest.testInterfaceWithNoProvider
  */
 @Provider
-public class TestProviderWithNonStaticMethod {
-    public DefDescriptor<ComponentDef> provide() {
+public class TestProviderWithStaticMethod {
+    public static DefDescriptor<ComponentDef> provide() {
         return DefDescriptorImpl.getInstance("test:test_Provider_Component", ComponentDef.class);
     }
 }

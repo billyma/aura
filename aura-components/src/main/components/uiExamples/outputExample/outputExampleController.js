@@ -13,20 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.auraframework.def;
 
-import java.util.Map;
-
-/**
- * 
- * DesignDef handles .design files within the component bundle
- * 
- */
-public interface DesignDef extends RootDefinition {
-    @Override
-    DefDescriptor<DesignDef> getDescriptor();
-
-    public Map<String, AttributeDesignDef> getAttributeDesignDefs();
-
-    public String getLabel();
-}
+({
+	
+    change : function(cmp, evt) {
+        cmp.set("v.myText", "some string");
+    }
+})

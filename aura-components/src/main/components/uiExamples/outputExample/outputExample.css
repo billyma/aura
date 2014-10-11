@@ -13,18 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.auraframework.impl.java.provider;
-
-import org.auraframework.def.DefDescriptor;
-import org.auraframework.def.InterfaceDef;
-import org.auraframework.impl.system.DefDescriptorImpl;
-import org.auraframework.system.Annotations.Provider;
-
-/**
- */
-@Provider
-public class TestProviderSelf {
-    public static DefDescriptor<InterfaceDef> provide() {
-        return DefDescriptorImpl.getInstance("test:test_Provider_InterfaceSelf", InterfaceDef.class);
-    }
-}
+ 
+ .THIS {
+ 	padding-left: 20px;
+ }
+ 
+.THIS.row { 
+ 	padding-top:20px;
+ 	min-height:28px;
+ 	width: 400px;
+ }
